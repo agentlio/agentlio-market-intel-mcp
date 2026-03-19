@@ -249,10 +249,26 @@ export REDIS_URL=redis://localhost:6379/0
 ## Documentation
 
 - Release notes: `RELEASE_NOTES_v0.3.1.md`
+- Release body template: `docs/release_v0.3.1_body.md`
 - Prompt pack: `docs/claude_prompt_pack.md`
 - Menu router prompt: `docs/claude_menu_router_prompt.md`
+- Organization profile draft: `docs/organization/ORGANIZATION_PROFILE_README.md`
 - Contribution guide: `CONTRIBUTING.md`
 - Security policy: `SECURITY.md`
+
+## Publishing
+
+### GitHub Releases
+
+Create a release from GitHub UI using tag `v0.3.1` and copy the body from `docs/release_v0.3.1_body.md`.
+
+### GitHub Packages (GHCR)
+
+This repository includes `.github/workflows/publish-ghcr.yml` to publish a Docker image to GHCR when a release is published.
+
+Expected image path:
+
+`ghcr.io/agentlio/agentlio-market-intel-mcp:latest`
 
 ## Compliance Note
 
